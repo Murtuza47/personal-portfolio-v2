@@ -1,11 +1,54 @@
 "use client"
 
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { cn } from "@/lib/utils"
 
 export function Header() {
+  const pathname = usePathname()
+  const [activeSection, setActiveSection] = useState<string>("home")
+  const isHomePage = pathname === "/"
+
+  useEffect(() => {
+    if (!isHomePage) {
+      setActiveSection("")
+      return
+    }
+
+    const handleScroll = () => {
+      const sections = ["home", "about", "services", "portfolio", "contact"]
+      const scrollPosition = window.scrollY + 100 // offset for header height
+
+      for (const section of sections) {
+        const element = document.getElementById(section)
+        if (element) {
+          const top = element.offsetTop
+          const height = element.offsetHeight
+          if (scrollPosition >= top && scrollPosition < top + height) {
+            setActiveSection(section)
+            break
+          }
+        }
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    handleScroll() // Initial check
+
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [isHomePage])
+
+  const isActive = (path: string) => {
+    if (path.startsWith("/#")) {
+      // Only check section active state on home page
+      return isHomePage && activeSection === path.split("#")[1]
+    }
+    return pathname === path
+  }
+
   return (
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b">
       <div className="container flex h-16 items-center justify-between">
@@ -13,30 +56,92 @@ export function Header() {
           <span className="text-primary">Ali</span> Murtaza
         </Link>
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="/#home" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link 
+            href="/#home" 
+            className={cn(
+              "text-sm font-medium transition-colors",
+              isActive("/#home") 
+                ? "text-primary" 
+                : "text-foreground/60 hover:text-primary"
+            )}
+          >
             Home
           </Link>
-          <Link href="/#about" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link 
+            href="/#about" 
+            className={cn(
+              "text-sm font-medium transition-colors",
+              isActive("/#about") 
+                ? "text-primary" 
+                : "text-foreground/60 hover:text-primary"
+            )}
+          >
             About
           </Link>
-          <Link href="/#services" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link 
+            href="/#services" 
+            className={cn(
+              "text-sm font-medium transition-colors",
+              isActive("/#services") 
+                ? "text-primary" 
+                : "text-foreground/60 hover:text-primary"
+            )}
+          >
             Services
           </Link>
-          <Link href="/#portfolio" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link 
+            href="/#portfolio" 
+            className={cn(
+              "text-sm font-medium transition-colors",
+              isActive("/#portfolio") 
+                ? "text-primary" 
+                : "text-foreground/60 hover:text-primary"
+            )}
+          >
             Portfolio
           </Link>
-          <Link href="/#contact" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link 
+            href="/#contact" 
+            className={cn(
+              "text-sm font-medium transition-colors",
+              isActive("/#contact") 
+                ? "text-primary" 
+                : "text-foreground/60 hover:text-primary"
+            )}
+          >
             Contact
           </Link>
-          <Link href="/blogs" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link 
+            href="/blogs" 
+            className={cn(
+              "text-sm font-medium transition-colors",
+              isActive("/blogs") 
+                ? "text-primary" 
+                : "text-foreground/60 hover:text-primary"
+            )}
+          >
             Blogs
           </Link>
-          <Link href="/projects" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link 
+            href="/projects" 
+            className={cn(
+              "text-sm font-medium transition-colors",
+              isActive("/projects") 
+                ? "text-primary" 
+                : "text-foreground/60 hover:text-primary"
+            )}
+          >
             Projects
           </Link>
         </nav>
         <div className="flex items-center gap-2">
-          <Link href="/services/web-development" className="hidden md:inline-flex">
+          <Link 
+            href="/services/web-development" 
+            className={cn(
+              "hidden md:inline-flex",
+              isActive("/services/web-development") && "text-primary"
+            )}
+          >
             <Button variant="outline" size="sm">
               Services
             </Button>
