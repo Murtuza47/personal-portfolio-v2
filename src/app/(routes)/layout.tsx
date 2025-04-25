@@ -9,7 +9,7 @@ import { CursorEffect } from "@/components/cursor-effect"
 export const metadata = {
   title: "Ali Murtaza - Senior Software Engineer",
   description:
-    "Personal portfolio of Alex Smith, a UI/UX designer and developer specializing in creating beautiful digital experiences.",
+    "Personal portfolio of Ali Murtaza, a Senior Software Engineer specializing in web development, mobile development, migration services, web scraping, e-commerce solutions, SEO, performance optimization, technical consulting, and AI automation.",
 }
 
 export default function RootLayout({
