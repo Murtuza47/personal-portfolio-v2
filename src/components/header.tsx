@@ -36,14 +36,13 @@ export function Header() {
     }
 
     window.addEventListener("scroll", handleScroll)
-    handleScroll() // Initial check
+    handleScroll()
 
     return () => window.removeEventListener("scroll", handleScroll)
   }, [isHomePage])
 
   const isActive = (path: string) => {
     if (path.startsWith("/#")) {
-      // Only check section active state on home page
       return isHomePage && activeSection === path.split("#")[1]
     }
     return pathname === path

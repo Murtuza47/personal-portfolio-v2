@@ -21,7 +21,7 @@ import { AnimatedBadge } from "@/components/animation/animated-badge"
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
+      {/* home Section */}
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">\
         <div className="absolute inset-0 z-0">
           <HeroAnimation />
@@ -103,10 +103,10 @@ export default function Home() {
             <div className="relative">
               <div className="relative z-10 rounded-2xl overflow-hidden border-8 border-background shadow-xl">
                 <Image
-                  src="/placeholder.svg?height=800&width=600"
-                  alt="About Alex Smith"
+                  src=""
+                  alt="About Ali Murtaza"
                   width={600}
-                  height={800}
+                  height={600}
                   className="w-full object-cover"
                 />
               </div>
