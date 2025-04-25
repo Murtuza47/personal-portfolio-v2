@@ -3,8 +3,29 @@
 import React from "react"
 import Link from "next/link"
 import { SocialLinks } from "./social-links"
+import { usePathname } from "next/navigation"
 
 export function Footer() {
+  const pathname = usePathname()
+  const isHomePage = pathname === "/"
+
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    if (isHomePage) {
+      e.preventDefault()
+      const element = document.getElementById(id)
+      if (element) {
+        const headerOffset = 80 // Adjust this value based on your header height
+        const elementPosition = element.getBoundingClientRect().top
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        })
+      }
+    }
+  }
+
   return (
     <footer className="py-12 border-t">
       <div className="container">
@@ -22,27 +43,47 @@ export function Footer() {
             <h3 className="font-medium text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/#home" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  href="/#home" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  onClick={(e) => handleSmoothScroll(e, "home")}
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/#about" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  href="/#about" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  onClick={(e) => handleSmoothScroll(e, "about")}
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/#services" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  href="/#services" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  onClick={(e) => handleSmoothScroll(e, "services")}
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/#portfolio" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  href="/#portfolio" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  onClick={(e) => handleSmoothScroll(e, "portfolio")}
+                >
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link href="/#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  href="/#contact" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  onClick={(e) => handleSmoothScroll(e, "contact")}
+                >
                   Contact
                 </Link>
               </li>

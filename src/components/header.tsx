@@ -48,6 +48,23 @@ export function Header() {
     return pathname === path
   }
 
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    if (isHomePage) {
+      e.preventDefault()
+      const element = document.getElementById(id)
+      if (element) {
+        const headerOffset = 65 // Adjust this value based on your header height
+        const elementPosition = element.getBoundingClientRect().top
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        })
+      }
+    }
+  }
+
   return (
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b">
       <div className="container flex h-16 items-center justify-between">
@@ -63,6 +80,7 @@ export function Header() {
                 ? "text-primary" 
                 : "text-foreground/60 hover:text-primary"
             )}
+            onClick={(e) => handleSmoothScroll(e, "home")}
           >
             Home
           </Link>
@@ -74,6 +92,7 @@ export function Header() {
                 ? "text-primary" 
                 : "text-foreground/60 hover:text-primary"
             )}
+            onClick={(e) => handleSmoothScroll(e, "about")}
           >
             About
           </Link>
@@ -85,6 +104,7 @@ export function Header() {
                 ? "text-primary" 
                 : "text-foreground/60 hover:text-primary"
             )}
+            onClick={(e) => handleSmoothScroll(e, "services")}
           >
             Services
           </Link>
@@ -96,6 +116,7 @@ export function Header() {
                 ? "text-primary" 
                 : "text-foreground/60 hover:text-primary"
             )}
+            onClick={(e) => handleSmoothScroll(e, "portfolio")}
           >
             Portfolio
           </Link>
@@ -107,6 +128,7 @@ export function Header() {
                 ? "text-primary" 
                 : "text-foreground/60 hover:text-primary"
             )}
+            onClick={(e) => handleSmoothScroll(e, "contact")}
           >
             Contact
           </Link>
@@ -145,7 +167,29 @@ export function Header() {
               Services
             </Button>
           </Link>
-          <Button className="hidden md:flex">Let's Talk</Button>
+          <Button 
+            className="hidden md:flex"
+            onClick={(e) => {
+              if (isHomePage) {
+                e.preventDefault();
+                const element = document.getElementById("contact");
+                if (element) {
+                  const headerOffset = 80; // Adjust this value based on your header height
+                  const elementPosition = element.getBoundingClientRect().top;
+                  const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                  });
+                }
+              } else {
+                window.location.href = "/#contact";
+              }
+            }}
+          >
+            Let's Talk
+          </Button>
           <div className="flex items-center">
             <div className="flex items-center justify-center h-10 w-10">
               <ThemeToggle />
