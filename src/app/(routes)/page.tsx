@@ -198,29 +198,44 @@ export default function Home() {
               />
             </Link>
             <ServiceCard
-              icon="layout"
-              title="UI/UX Design"
-              description="Creating intuitive, engaging user interfaces and experiences that delight users and achieve business goals."
-            />
-            <ServiceCard
               icon="smartphone"
               title="Mobile Development"
-              description="Developing cross-platform mobile applications that provide seamless experiences across devices."
+              description="Developing cross-platform mobile applications that provide seamless experiences across iOS and Android devices."
             />
             <ServiceCard
-              icon="search"
-              title="SEO Optimization"
-              description="Improving your website's visibility in search engines to drive more organic traffic and conversions."
+              icon="move"
+              title="Migration Services"
+              description="Seamlessly migrate your existing systems to modern platforms with minimal disruption to your business operations."
             />
             <ServiceCard
-              icon="trending-up"
-              title="Digital Marketing"
-              description="Creating and implementing strategies to promote your brand and products across digital channels."
+              icon="spider"
+              title="Web Scrapping"
+              description="Extract valuable data from websites with custom web scraping solutions that deliver accurate, structured information."
             />
             <ServiceCard
-              icon="users"
-              title="Brand Strategy"
-              description="Developing comprehensive brand identities and strategies that resonate with your target audience."
+              icon="shopping-bag"
+              title="E-Commerce Solutions"
+              description="Create powerful online stores with secure payment processing, inventory management, and optimized user experiences."
+            />
+            <ServiceCard
+              icon="bar-chart-2"
+              title="SEO & Web Analytics"
+              description="Improve your website's visibility in search engines and gain valuable insights into user behavior and performance."
+            />
+            <ServiceCard
+              icon="zap"
+              title="Performance Optimization"
+              description="Speed up your websites and applications with expert optimization techniques for better user experience and SEO rankings."
+            />
+            <ServiceCard
+              icon="briefcase"
+              title="Technical Consulting"
+              description="Get expert advice on technology choices, architecture decisions, and digital strategy to achieve your business goals."
+            />
+            <ServiceCard
+              icon="cpu"
+              title="AI Agents & Automation"
+              description="Implement AI-powered solutions and automation workflows to increase efficiency and reduce manual tasks in your business."
             />
           </div>
         </div>
