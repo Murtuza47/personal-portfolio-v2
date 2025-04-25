@@ -106,7 +106,7 @@ export default function Home() {
                   src=""
                   alt="About Ali Murtaza"
                   width={600}
-                  height={600}
+                  height={640}
                   className="w-full object-cover"
                 />
               </div>
@@ -117,16 +117,16 @@ export default function Home() {
                     <p className="text-xs sm:text-sm text-muted-foreground">Years Experience</p>
                   </div>
                   <div className="text-center">
-                    <AnimatedCounter value={120} duration={2} className="text-2xl sm:text-3xl font-bold text-primary" />
+                    <AnimatedCounter value={15} duration={2} className="text-2xl sm:text-3xl font-bold text-primary" />
                     <p className="text-xs sm:text-sm text-muted-foreground">Projects Completed</p>
                   </div>
                   <div className="text-center">
-                    <AnimatedCounter value={85} duration={2} className="text-2xl sm:text-3xl font-bold text-primary" />
+                    <AnimatedCounter value={100} duration={2} className="text-2xl sm:text-3xl font-bold text-primary" />
                     <p className="text-xs sm:text-sm text-muted-foreground">Happy Clients</p>
                   </div>
                   <div className="text-center">
-                    <AnimatedCounter value={15} duration={2} className="text-2xl sm:text-3xl font-bold text-primary" />
-                    <p className="text-xs sm:text-sm text-muted-foreground">Awards Won</p>
+                    <AnimatedCounter value={3} duration={2} className="text-2xl sm:text-3xl font-bold text-primary" />
+                    <p className="text-xs sm:text-sm text-muted-foreground">Achievements & Certifications</p>
                   </div>
                 </div>
               </div>
