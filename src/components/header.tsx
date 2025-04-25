@@ -31,6 +31,9 @@ export function Header() {
           <Link href="/blogs" className="text-sm font-medium hover:text-primary transition-colors">
             Blogs
           </Link>
+          <Link href="/projects" className="text-sm font-medium hover:text-primary transition-colors">
+            Projects
+          </Link>
         </nav>
         <div className="flex items-center gap-2">
           <Link href="/services/web-development" className="hidden md:inline-flex">
