@@ -9,22 +9,16 @@ import { ContactSection } from "@/containers/contact-section"
 export default function Home() {
   return (
     <>
-      {/* home Section */}
       <HomeSection />
 
-      {/* About Section */}
       <AboutSection />
 
-      {/* Services Section */}
       <ServiceSection />
 
-      {/* Portfolio Section */}
       <PortfolioSection />
 
-      {/* Testimonials Section */}
       {/* <TestimonialSection /> */}
 
-      {/* Contact Section */}
       <ContactSection />
     </>
   )

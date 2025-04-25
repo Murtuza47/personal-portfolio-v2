@@ -8,6 +8,9 @@ import { BlogPostCard } from "@/components/blog/blog-post-card"
 import { BlogCategories } from "@/components/blog/blog-categories"
 import { BlogSearch } from "@/components/blog/blog-search"
 import { BlogPagination } from "@/components/blog/blog-pagination"
+import { HeroAnimation } from "@/components/animation/hero-animation"
+import { AnimatedBadge } from "@/components/animation/animated-badge"
+import { CTASection } from "@/containers/cta-section"
 
 // Mock data for blog posts
 const blogPosts = [
@@ -157,7 +160,7 @@ export default function BlogPage() {
     const matchesCategory = selectedCategory ? post.category === selectedCategory : true
     const matchesSearch = searchQuery
       ? post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        post.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
+      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
       : true
     return matchesCategory && matchesSearch
   })
@@ -177,12 +180,17 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-12 md:pt-40 md:pb-16">
+      <section className="relative h-[calc(100vh-65px)] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <HeroAnimation />
+        </div>
         <div className="container">
           <div className="mx-auto max-w-2xl text-center">
-            <Badge className="mb-4 px-3 py-1 text-sm rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
-              Blog
-            </Badge>
+            <AnimatedBadge
+              prefix="My"
+              services={["Blog", "Posts", "Writings", "Articles", "Stories"]}
+              className="mb-6 inline-flex"
+            />
             <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">Insights & Perspectives</h1>
             <p className="mb-8 text-xl text-muted-foreground">
               Thoughts, ideas, and insights on design, development, and technology.
@@ -192,7 +200,7 @@ export default function BlogPage() {
       </section>
 
       {/* Blog Content */}
-      <section className="pb-20">
+      <section className="py-20 bg-muted/30">
         <div className="container">
           <div className="grid gap-12 md:grid-cols-3">
             {/* Sidebar */}
@@ -294,28 +302,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container">
-          <div className="mx-auto max-w-4xl rounded-2xl bg-primary/5 p-8 md:p-12 lg:p-16 text-center">
-            <Badge className="mb-4 px-3 py-1 text-sm rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
-              Newsletter
-            </Badge>
-            <h2 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">Stay updated with my latest articles</h2>
-            <p className="mb-8 text-xl text-muted-foreground">
-              Subscribe to my newsletter to receive exclusive content, tips, and insights.
-            </p>
-            <div className="mx-auto flex max-w-md flex-col gap-2 sm:flex-row">
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="flex-1 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-              />
-              <Button className="bg-primary hover:bg-primary/90">Subscribe</Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CTASection />
     </>
   )
 }

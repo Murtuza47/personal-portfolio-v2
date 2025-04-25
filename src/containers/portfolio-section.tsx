@@ -2,6 +2,7 @@ import { ProjectCard } from "@/components/project-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function PortfolioSection() {
   return (
@@ -55,10 +56,12 @@ export function PortfolioSection() {
           />
         </div>
         <div className="text-center mt-12">
-          <Button size="lg" variant="outline" className="group">
-            View All Projects
-            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <Link href="/projects">
+            <Button size="lg" variant="outline" className="group">
+              View All Projects
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

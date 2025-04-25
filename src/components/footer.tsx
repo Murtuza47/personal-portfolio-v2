@@ -14,7 +14,7 @@ export function Footer() {
       e.preventDefault()
       const element = document.getElementById(id)
       if (element) {
-        const headerOffset = 80 // Adjust this value based on your header height
+        const headerOffset = 65 // Adjusted to 65px as requested
         const elementPosition = element.getBoundingClientRect().top
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset
 

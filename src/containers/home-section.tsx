@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export function HomeSection() {
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">\
+    <section id="home" className="relative h-[calc(100vh-65px)] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <HeroAnimation />
         </div>
