@@ -4,7 +4,7 @@ import { AvatarImage } from "@/components/ui/avatar"
 import { Avatar } from "@/components/ui/avatar"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, ChevronDown, Github, Instagram, Linkedin, Mail, Twitter } from "lucide-react"
+import { ArrowRight, ChevronDown, Mail } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -15,6 +15,7 @@ import { ProjectCard } from "@/components/project-card"
 import { ServiceCard } from "@/components/service-card"
 import { ContactForm } from "@/components/contact-form"
 import { HeroAnimation } from "@/components/animation/hero-animation"
+import { SocialLinks } from "@/components/social-links"
 
 export default function Home() {
   return (
@@ -49,24 +50,7 @@ export default function Home() {
                   Contact Me
                 </Button>
               </div>
-              <div className="flex items-center gap-6">
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Github className="h-5 w-5" />
-                  <span className="sr-only">GitHub</span>
-                </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Linkedin className="h-5 w-5" />
-                  <span className="sr-only">LinkedIn</span>
-                </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Twitter className="h-5 w-5" />
-                  <span className="sr-only">Twitter</span>
-                </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  <Instagram className="h-5 w-5" />
-                  <span className="sr-only">Instagram</span>
-                </Link>
-              </div>
+              <SocialLinks />
             </div>
             <div className="relative hidden md:block">
               <div className="relative z-10 aspect-square overflow-hidden rounded-full border-4 border-background shadow-xl mx-auto max-w-md">

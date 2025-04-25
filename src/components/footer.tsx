@@ -4,6 +4,7 @@ import React from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Github, Instagram, Linkedin, Twitter } from "lucide-react"
+import { SocialLinks } from "./social-links"
 
 export function Footer() {
   return (
@@ -17,24 +18,7 @@ export function Footer() {
             <p className="text-muted-foreground">
               Creating beautiful digital experiences that inspire and engage users.
             </p>
-            <div className="flex items-center gap-4">
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
-              </Link>
-            </div>
+            <SocialLinks />
           </div>
           <div>
             <h3 className="font-medium text-lg mb-4">Quick Links</h3>
