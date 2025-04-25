@@ -549,7 +549,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-medium">Mail me at</h3>
-                    <p className="text-muted-foreground">hello@alexsmith.com</p>
+                    <p className="text-muted-foreground">azatrum.005@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -571,30 +571,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-medium">Call me at</h3>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-full bg-primary/10 text-primary">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-5 w-5"
-                    >
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-medium">Visit me at</h3>
-                    <p className="text-muted-foreground">123 Design Street, San Francisco, CA</p>
+                    <p className="text-muted-foreground">+92 333-2018764</p>
                   </div>
                 </div>
               </div>
