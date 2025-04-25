@@ -16,6 +16,7 @@ import { ServiceCard } from "@/components/service-card"
 import { ContactForm } from "@/components/contact-form"
 import { HeroAnimation } from "@/components/animation/hero-animation"
 import { SocialLinks } from "@/components/social-links"
+import { AnimatedBadge } from "@/components/animation/animated-badge"
 
 export default function Home() {
   return (
@@ -25,14 +26,15 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <HeroAnimation />
         </div>
-        
+
         <div className="container relative z-10 px-4">
           <div className="grid gap-8 md:grid-cols-2 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge className="px-3 py-1 text-sm rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors z-10">
-                  UI/UX Designer & Developer
-                </Badge>
+                <AnimatedBadge
+                  prefix="I'm a"
+                  services={["Web Developer", "Mobile Dev", "Consultant", "Tech Expert", "Full-Stack Dev"]}
+                />
                 <AnimatedText
                   text="Creating digital experiences that inspire"
                   className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
@@ -65,7 +67,7 @@ export default function Home() {
               </div>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full bg-gradient-to-br from-primary/20 to-primary/5 blur-3xl -z-10" />
             </div>
-            
+
             <div className="relative md:hidden mx-auto">
               <div className="relative z-10 aspect-square overflow-hidden rounded-full border-4 border-background shadow-xl mx-auto max-w-[250px]">
                 <Image
@@ -83,7 +85,7 @@ export default function Home() {
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden md:block">
             <Link
               href="#about"
-              className="flex items-center justify-center h-10 w-10 rounded-full bg-primary/10 text-primary"
+              className="flex items-center justify-center h-10 w-10 rounded-full bg-primary/10 text-primary border-2 border-primary/20 hover:bg-primary/20 transition-all duration-300 shadow-sm hover:shadow-md animate-border"
             >
               <ChevronDown className="h-6 w-6" />
               <span className="sr-only">Scroll Down</span>
