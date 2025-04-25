@@ -72,23 +72,43 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  UI/UX Design
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/services/mobile-development" className="text-muted-foreground hover:text-primary transition-colors">
                   Mobile Development
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  SEO Optimization
+                <Link href="/services/migration" className="text-muted-foreground hover:text-primary transition-colors">
+                  Migration Services
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Digital Marketing
+                <Link href="/services/web-scraping" className="text-muted-foreground hover:text-primary transition-colors">
+                  Web Scraping
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/ecommerce" className="text-muted-foreground hover:text-primary transition-colors">
+                  E-Commerce Solutions
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/seo" className="text-muted-foreground hover:text-primary transition-colors">
+                  SEO & Web Analytics
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/performance" className="text-muted-foreground hover:text-primary transition-colors">
+                  Performance Optimization
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/consulting" className="text-muted-foreground hover:text-primary transition-colors">
+                  Technical Consulting
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/ai" className="text-muted-foreground hover:text-primary transition-colors">
+                  AI Agents & Automation
                 </Link>
               </li>
             </ul>
