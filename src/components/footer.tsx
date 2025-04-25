@@ -2,15 +2,13 @@
 
 import React from "react"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Github, Instagram, Linkedin, Twitter } from "lucide-react"
 import { SocialLinks } from "./social-links"
 
 export function Footer() {
   return (
     <footer className="py-12 border-t">
       <div className="container">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="space-y-4">
             <Link href="/" className="font-bold text-xl inline-block">
               <span className="text-primary">Ali</span> Murtaza
@@ -113,7 +111,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h3 className="font-medium text-lg mb-4">Subscribe</h3>
             <p className="text-muted-foreground mb-4">Subscribe to get the latest news and updates.</p>
             <form className="flex gap-2">
@@ -126,7 +124,7 @@ export function Footer() {
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </form>
-          </div>
+          </div> */}
         </div>
         <div className="border-t mt-12 pt-6 text-center text-muted-foreground">
           <p>© {new Date().getFullYear()} Ali Murtaza. All rights reserved.</p>
