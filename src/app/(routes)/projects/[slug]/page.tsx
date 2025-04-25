@@ -145,66 +145,10 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
   }, [])
 
   return (
-    <div className="min-h-screen bg-background">
-      <CursorEffect />
-
-      {/* Header */}
-      <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b">
-        <div className="container flex h-16 items-center justify-between">
-          <Link href="/" className="font-bold text-xl">
-            <span className="text-primary">Alex</span>Smith
-          </Link>
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="/#home" className="text-sm font-medium hover:text-primary transition-colors">
-              Home
-            </Link>
-            <Link href="/#about" className="text-sm font-medium hover:text-primary transition-colors">
-              About
-            </Link>
-            <Link href="/#services" className="text-sm font-medium hover:text-primary transition-colors">
-              Services
-            </Link>
-            <Link href="/projects" className="text-sm font-medium text-primary transition-colors">
-              Projects
-            </Link>
-            <Link href="/blog" className="text-sm font-medium hover:text-primary transition-colors">
-              Blog
-            </Link>
-            <Link href="/#contact" className="text-sm font-medium hover:text-primary transition-colors">
-              Contact
-            </Link>
-          </nav>
-          <div className="flex items-center gap-2">
-            <Button className="hidden md:flex">Let's Talk</Button>
-            <div className="flex items-center">
-              <ThemeToggle />
-            </div>
-            <Button variant="ghost" size="icon" className="md:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-6 w-6"
-              >
-                <line x1="4" x2="20" y1="12" y2="12" />
-                <line x1="4" x2="20" y1="6" y2="6" />
-                <line x1="4" x2="20" y1="18" y2="18" />
-              </svg>
-            </Button>
-          </div>
-        </div>
-      </header>
-
+    <>
       {/* Project Hero */}
-      <section className="pt-32 pb-20 md:pt-40 md:pb-32 relative overflow-hidden">
+      <section className="relative h-[calc(100vh-65px)] flex items-center justify-center overflow-hidden">
         <div className="container relative z-10">
-          {/* Back to projects */}
           <Link
             href="/projects"
             className="mb-8 inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -481,105 +425,6 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="py-12 border-t">
-        <div className="container">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <div className="space-y-4">
-              <Link href="/" className="font-bold text-xl inline-block">
-                <span className="text-primary">Alex</span>Smith
-              </Link>
-              <p className="text-muted-foreground">
-                Creating beautiful digital experiences that inspire and engage users.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-medium text-lg mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/#home" className="text-muted-foreground hover:text-primary transition-colors">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#about" className="text-muted-foreground hover:text-primary transition-colors">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#services" className="text-muted-foreground hover:text-primary transition-colors">
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/projects" className="text-muted-foreground hover:text-primary transition-colors">
-                    Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#contact" className="text-muted-foreground hover:text-primary transition-colors">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-medium text-lg mb-4">Services</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link
-                    href="/services/web-development"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    Web Development
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services/mobile-development"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    Mobile Development
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services/ui-ux-design"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    UI/UX Design
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services/e-commerce"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    E-Commerce Solutions
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-medium text-lg mb-4">Contact</h3>
-              <ul className="space-y-2">
-                <li className="text-muted-foreground">hello@alexsmith.com</li>
-                <li className="text-muted-foreground">+1 (555) 123-4567</li>
-                <li className="text-muted-foreground">123 Design Street, San Francisco, CA</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t mt-12 pt-6 text-center text-muted-foreground">
-            <p>© {new Date().getFullYear()} Alex Smith. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
-    </div>
+    </>
   )
 }
