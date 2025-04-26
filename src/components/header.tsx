@@ -6,10 +6,12 @@ import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { cn } from "@/lib/utils"
+import { ChevronDown } from "lucide-react"
 
 export function Header() {
   const pathname = usePathname()
   const [activeSection, setActiveSection] = useState<string>("home")
+  const [isServicesHovered, setIsServicesHovered] = useState(false)
   const isHomePage = pathname === "/"
 
   useEffect(() => {
@@ -96,18 +98,78 @@ export function Header() {
           >
             About
           </Link>
-          <Link 
-            href="/#services" 
-            className={cn(
-              "text-sm font-medium transition-colors",
-              isActive("/#services") 
-                ? "text-primary" 
-                : "text-foreground/60 hover:text-primary"
-            )}
-            onClick={(e) => handleSmoothScroll(e, "services")}
+          <div 
+            className="relative group"
+            onMouseEnter={() => setIsServicesHovered(true)}
+            onMouseLeave={() => setIsServicesHovered(false)}
           >
-            Services
-          </Link>
+            <Link 
+              href="/#services" 
+              className={cn(
+                "text-sm font-medium transition-colors flex items-center gap-1",
+                isActive("/#services") 
+                  ? "text-primary" 
+                  : "text-foreground/60 group-hover:text-primary"
+              )}
+              onClick={(e) => handleSmoothScroll(e, "services")}
+            >
+              Services
+              <ChevronDown className="h-3 w-3" />
+            </Link>
+            
+            <div 
+              className="absolute top-full left-0 mt-1 w-56 rounded-md border bg-background p-1 text-foreground shadow-md z-[100] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+            >
+              <Link 
+                href="/services/web-development" 
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+              >
+                Web Development
+              </Link>
+              <Link 
+                href="/services/mobile-development" 
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+              >
+                Mobile Development
+              </Link>
+              <Link 
+                href="/services/migration" 
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+              >
+                Migration Services
+              </Link>
+              <Link 
+                href="/services/web-scraping" 
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+              >
+                Web Scraping
+              </Link>
+              <Link 
+                href="/services/ecommerce" 
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+              >
+                E-Commerce Solutions
+              </Link>
+              <Link 
+                href="/services/seo" 
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+              >
+                SEO & Web Analytics
+              </Link>
+              <Link 
+                href="/services/performance" 
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+              >
+                Performance Optimization
+              </Link>
+              <Link 
+                href="/services/consulting" 
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+              >
+                Technical Consulting
+              </Link>
+            </div>
+          </div>
           <Link 
             href="/#portfolio" 
             className={cn(
@@ -156,17 +218,6 @@ export function Header() {
           </Link>
         </nav>
         <div className="flex items-center gap-2">
-          <Link 
-            href="/services/web-development" 
-            className={cn(
-              "hidden md:inline-flex",
-              isActive("/services/web-development") && "text-primary"
-            )}
-          >
-            <Button variant="outline" size="sm">
-              Services
-            </Button>
-          </Link>
           <Button 
             className="hidden md:flex"
             onClick={(e) => {
