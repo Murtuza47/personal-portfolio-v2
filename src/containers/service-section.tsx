@@ -45,7 +45,7 @@ export function ServiceSection() {
             <ServiceCard
               icon="code"
               title="Web Development"
-              description="From web development to AI automation — I deliver clean, scalable systems that drive real business results"
+              description="Build secure, scalable, and lightning-fast websites that turn visitors into loyal users."
             />
           </Link>
           <Link

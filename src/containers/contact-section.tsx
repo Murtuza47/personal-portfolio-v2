@@ -6,20 +6,23 @@ import { Mail } from "lucide-react";
 
 export function ContactSection() {
   return (
-    <section id="contact" className="relative h-[calc(100vh-65px)] flex items-center justify-center overflow-hidden">
-    <div className="container">
-      <div className="grid gap-12 md:grid-cols-2 items-center">
-        <div className="space-y-6">
-          <div>
-            <Badge className="mb-2 px-3 py-1 text-sm rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
-              Get In Touch
-            </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Let’s Build Something Powerful Together</h2>
-          </div>
-          <p className="text-muted-foreground">
-            Have a project in mind or need expert advice? I’m just a message away.
-          </p>
-          <div className="space-y-4">
+    <section 
+      id="contact" 
+      className="relative py-16 md:py-20 lg:h-[calc(100vh-65px)] lg:flex lg:items-center lg:justify-center lg:overflow-hidden"
+    >
+      <div className="container">
+        <div className="grid gap-12 md:grid-cols-2 items-start">
+          <div className="space-y-6">
+            <div>
+              <Badge className="mb-2 px-3 py-1 text-sm rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+                Get In Touch
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Let's Build Something Powerful Together</h2>
+            </div>
+            <p className="text-muted-foreground">
+              Have a project in mind or need expert advice? I'm just a message away.
+            </p>
+            
             <div className="flex items-center gap-4">
               <div className="flex-shrink-0 h-12 w-12 flex items-center justify-center rounded-full bg-primary/10 text-primary">
                 <Mail className="h-5 w-5" />
@@ -52,10 +55,9 @@ export function ContactSection() {
               </div>
             </div>
           </div>
+          <ContactForm />
         </div>
-        <ContactForm />
       </div>
-    </div>
-  </section> 
+    </section>
   )
 }
