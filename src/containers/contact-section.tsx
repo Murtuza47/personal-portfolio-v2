@@ -6,7 +6,7 @@ import { Mail } from "lucide-react";
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="relative h-[calc(100vh-65px)] flex items-center justify-center overflow-hidden">
     <div className="container">
       <div className="grid gap-12 md:grid-cols-2 items-center">
         <div className="space-y-6">

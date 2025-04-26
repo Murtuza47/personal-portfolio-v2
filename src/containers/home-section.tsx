@@ -26,7 +26,7 @@ export function HomeSection() {
                 />
                 <AnimatedText
                   text="I Built Smart & Scalable Solutions"
-                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
+                  className="text-[26px] sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
                 />
                 <p className="text-muted-foreground max-w-md">
                   Transform your ideas into secure, high-performance digital products powered by full-stack development and intelligent automation.
