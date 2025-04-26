@@ -3,7 +3,7 @@
 import { AnimatedCounter } from "@/components/animation/animated-counter";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 
 export function AboutSection() {
@@ -53,38 +53,53 @@ export function AboutSection() {
           <div className="space-y-6">
             <div>
               <Badge className="mb-2 px-3 py-1 text-sm rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
-                About Me
+                Meet Ali Murtaza
               </Badge>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
-                Crafting digital experiences with passion and precision
+                Full-Stack Developer | Automation Expert | Microsoft 365 Solutions Architect
               </h2>
             </div>
             <p className="text-muted-foreground">
-              I'm Alex Smith, a passionate UI/UX designer and developer with over 5 years of experience creating
-              beautiful, functional digital experiences. I specialize in translating complex problems into intuitive
-              interfaces that users love.
+              I build modern, scalable, and intelligent digital solutions for businesses that want more than just
+              code—they want results. With 10+ years of hands-on experience, I fuse development with innovation,
+              delivering robust, secure, and automation-driven products.
             </p>
+            <p className="text-muted-foreground font-bold text-lg">
+              What Sets Me Apart:
+            </p>
+            <div className="space-y-3">
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <p className="text-muted-foreground">Delivered end-to-end solutions across web, mobile, and cloud</p>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <p className="text-muted-foreground">Specializing in AI-powered agents and custom automation with OpesnAI & LangChain</p>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <p className="text-muted-foreground">Expertise in PowerShell scripting & SharePoint Framework for enterprise-grade solutions</p>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <p className="text-muted-foreground">Built and optimized solutions for startups and Fortune 500s alike</p>
+              </div>
+            </div>
             <p className="text-muted-foreground">
-              My approach combines creative design thinking with technical expertise to deliver solutions that not
-              only look great but also perform exceptionally. I believe in user-centered design and creating products
-              that make a difference.
+              I don’t just build applications — I solve real problems with purpose-built technology that works for you.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-1">
                 <h3 className="font-medium">Name:</h3>
-                <p className="text-muted-foreground">Alex Smith</p>
+                <p className="text-muted-foreground">Ali Murtaza</p>
               </div>
               <div className="space-y-1">
                 <h3 className="font-medium">Email:</h3>
-                <p className="text-muted-foreground">hello@alexsmith.com</p>
+                <p className="text-muted-foreground">azatrum.005@gmail.com</p>
               </div>
               <div className="space-y-1">
                 <h3 className="font-medium">Location:</h3>
-                <p className="text-muted-foreground">San Francisco, CA</p>
-              </div>
-              <div className="space-y-1">
-                <h3 className="font-medium">Availability:</h3>
-                <p className="text-muted-foreground">Freelance / Full-time</p>
+                <p className="text-muted-foreground">Karachi, Pakistan</p>
               </div>
             </div>
             <Button

@@ -25,11 +25,11 @@ export function HomeSection() {
                   services={["Web Developer", "Mobile Dev", "Consultant", "Tech Expert", "Full-Stack Dev"]}
                 />
                 <AnimatedText
-                  text="Creating digital experiences that inspire"
+                  text="I Built Smart & Scalable Solutions"
                   className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
                 />
                 <p className="text-muted-foreground max-w-md">
-                  I design and build beautiful websites and digital products that put user experience first.
+                  Transform your ideas into secure, high-performance digital products powered by full-stack development and intelligent automation.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">

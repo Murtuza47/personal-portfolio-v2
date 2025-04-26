@@ -41,7 +41,6 @@ export function ServiceSection() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <Link 
               href="/services/web-development"
-              onClick={(e) => handleSmoothScroll(e, "contact")}
             >
               <ServiceCard
                 icon="code"
@@ -51,7 +50,6 @@ export function ServiceSection() {
             </Link>
             <Link 
               href="/services/mobile-development"
-              onClick={(e) => handleSmoothScroll(e, "contact")}
             >
               <ServiceCard
                 icon="smartphone"
@@ -61,7 +59,6 @@ export function ServiceSection() {
             </Link>
             <Link 
               href="/services/migration"
-              onClick={(e) => handleSmoothScroll(e, "contact")}
             >
               <ServiceCard
                 icon="move"
@@ -71,7 +68,6 @@ export function ServiceSection() {
             </Link>
             <Link 
               href="/services/web-scraping"
-              onClick={(e) => handleSmoothScroll(e, "contact")}
             >
               <ServiceCard
                 icon="spider"
@@ -81,7 +77,6 @@ export function ServiceSection() {
             </Link>
             <Link 
               href="/services/ecommerce"
-              onClick={(e) => handleSmoothScroll(e, "contact")}
             >
               <ServiceCard
                 icon="shopping-bag"
@@ -91,7 +86,6 @@ export function ServiceSection() {
             </Link>
             <Link 
               href="/services/seo"
-              onClick={(e) => handleSmoothScroll(e, "contact")}
             >
               <ServiceCard
                 icon="bar-chart-2"
@@ -101,7 +95,6 @@ export function ServiceSection() {
             </Link>
             <Link 
               href="/services/performance"
-              onClick={(e) => handleSmoothScroll(e, "contact")}
             >
               <ServiceCard
                 icon="zap"
@@ -111,7 +104,6 @@ export function ServiceSection() {
             </Link>
             <Link 
               href="/services/consulting"
-              onClick={(e) => handleSmoothScroll(e, "contact")}
             >
               <ServiceCard
                 icon="briefcase"
@@ -121,7 +113,6 @@ export function ServiceSection() {
             </Link>
             <Link 
               href="/services/ai"
-              onClick={(e) => handleSmoothScroll(e, "contact")}
             >
               <ServiceCard
                 icon="cpu"

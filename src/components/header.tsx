@@ -73,7 +73,7 @@ export function Header() {
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           <Link 
-            href="/#home" 
+            href="/" 
             className={cn(
               "text-sm font-medium transition-colors",
               isActive("/#home") 
@@ -174,7 +174,7 @@ export function Header() {
                 e.preventDefault();
                 const element = document.getElementById("contact");
                 if (element) {
-                  const headerOffset = 80; // Adjust this value based on your header height
+                  const headerOffset = 65;
                   const elementPosition = element.getBoundingClientRect().top;
                   const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
