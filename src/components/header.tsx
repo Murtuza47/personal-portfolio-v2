@@ -151,12 +151,6 @@ export function Header() {
                 E-Commerce Solutions
               </Link>
               <Link 
-                href="/services/seo" 
-                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
-              >
-                SEO & Web Analytics
-              </Link>
-              <Link 
                 href="/services/performance" 
                 className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
               >
@@ -167,6 +161,12 @@ export function Header() {
                 className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
               >
                 Technical Consulting
+              </Link>
+              <Link 
+                href="/services/ai" 
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+              >
+                AI Agents & Automation
               </Link>
             </div>
           </div>

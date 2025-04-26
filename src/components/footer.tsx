@@ -32,10 +32,10 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="space-y-4">
             <Link href="/" className="font-bold text-xl inline-block">
-              <span className="text-primary">Ali</span> Murtaza
+              Hello, I’m <span className="text-primary">Ali</span> Murtaza
             </Link>
             <p className="text-muted-foreground">
-              Creating beautiful digital experiences that inspire and engage users.
+              A full-stack developer blending code, automation, and intelligent design to build future-ready digital solutions.
             </p>
             <SocialLinks />
           </div>

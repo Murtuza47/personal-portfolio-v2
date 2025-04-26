@@ -14,10 +14,10 @@ export function ContactSection() {
             <Badge className="mb-2 px-3 py-1 text-sm rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
               Get In Touch
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Let's discuss your project</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Let’s Build Something Powerful Together</h2>
           </div>
           <p className="text-muted-foreground">
-            I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+            Have a project in mind or need expert advice? I’m just a message away.
           </p>
           <div className="space-y-4">
             <div className="flex items-center gap-4">
