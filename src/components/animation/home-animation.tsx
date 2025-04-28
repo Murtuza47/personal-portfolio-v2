@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react"
 import { useTheme } from "next-themes"
 
-export function HeroAnimation() {
+export function HomeAnimation() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const { resolvedTheme } = useTheme()
 
@@ -30,7 +30,7 @@ export function HeroAnimation() {
     const isMobile = window.innerWidth < 768
 
     // Particle properties - adjust based on screen size
-    const particleCount = isMobile ? 25 : 100
+    const particleCount = isMobile ? 50 : 100
     const connectionDistance = isMobile ? 200 : 100
     const particles: {
       x: number

@@ -6,14 +6,14 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordian"
-import { HeroAnimation } from "@/components/animation/hero-animation"
+import { HomeAnimation } from "@/components/animation/home-animation"
 
 export default function MigrationServicesPage() {
   return (
     <>
       <section className="relative h-[calc(100vh-65px)] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <HeroAnimation />
+          <HomeAnimation />
         </div>
         <div className="container relative z-10">
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto">

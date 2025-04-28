@@ -4,14 +4,13 @@ import React, { useEffect, useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { ThemeToggle } from "@/components/theme-toggle"
+import { ThemeToggle } from "@/components/theme/theme-toggle"
 import { cn } from "@/lib/utils"
 import { ChevronDown } from "lucide-react"
 
 export function Header() {
   const pathname = usePathname()
   const [activeSection, setActiveSection] = useState<string>("home")
-  const [isServicesHovered, setIsServicesHovered] = useState(false)
   const isHomePage = pathname === "/"
 
   useEffect(() => {
@@ -100,8 +99,6 @@ export function Header() {
           </Link>
           <div 
             className="relative group"
-            onMouseEnter={() => setIsServicesHovered(true)}
-            onMouseLeave={() => setIsServicesHovered(false)}
           >
             <Link 
               href="/#services" 
@@ -242,7 +239,7 @@ export function Header() {
             Let's Talk
           </Button>
           <div className="flex items-center">
-            <div className="flex items-center justify-center h-10 w-10">
+            <div className="flex items-center justify-center">
               <ThemeToggle />
             </div>
           </div>

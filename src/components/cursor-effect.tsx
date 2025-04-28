@@ -8,8 +8,13 @@ export function CursorEffect() {
   const [isPointer, setIsPointer] = useState(false)
   const [isHidden, setIsHidden] = useState(false)
   const [isClicking, setIsClicking] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const { theme } = useTheme()
   const isDark = theme === "dark"
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   useEffect(() => {
     const updatePosition = (e: MouseEvent) => {
@@ -44,8 +49,8 @@ export function CursorEffect() {
     }
   }, [position])
 
-  // Don't render on mobile devices
-  if (typeof window !== "undefined" && window.matchMedia("(max-width: 768px)").matches) {
+  // Don't render on mobile devices or before theme is mounted
+  if (typeof window !== "undefined" && (window.matchMedia("(max-width: 768px)").matches || !mounted)) {
     return null
   }
 

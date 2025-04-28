@@ -2,7 +2,7 @@
 
 import { AnimatedBadge } from "@/components/animation/animated-badge";
 import { AnimatedText } from "@/components/animation/animated-text";
-import { HeroAnimation } from "@/components/animation/hero-animation";
+import { HomeAnimation } from "@/components/animation/home-animation";
 import { SocialLinks } from "@/components/social-links";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronDown } from "lucide-react";
@@ -13,7 +13,7 @@ export function HomeSection() {
   return (
     <section id="home" className="relative h-[calc(100vh-65px)] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <HeroAnimation />
+          <HomeAnimation />
         </div>
 
         <div className="container relative z-10 px-4">
@@ -46,8 +46,8 @@ export function HomeSection() {
             <div className="relative hidden md:block">
               <div className="relative z-10 aspect-square overflow-hidden rounded-full border-4 border-background shadow-xl mx-auto max-w-md">
                 <Image
-                  src="/placeholder.svg?height=600&width=600"
-                  alt="Alex Smith"
+                  src=""
+                  alt="Ali Murtaza"
                   width={600}
                   height={600}
                   className="object-cover"
@@ -61,7 +61,7 @@ export function HomeSection() {
               <div className="relative z-10 aspect-square overflow-hidden rounded-full border-4 border-background shadow-xl mx-auto max-w-[250px]">
                 <Image
                   src="/placeholder.svg?height=600&width=600"
-                  alt="Alex Smith"
+                  alt="Ali Murtaza"
                   width={600}
                   height={600}
                   className="object-cover"

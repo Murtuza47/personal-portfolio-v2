@@ -6,12 +6,10 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ArrowLeft, Calendar, Clock } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
 import { BlogAuthor } from "@/components/blog/blog-author"
 import { BlogShare } from "@/components/blog/blog-share"
 import { BlogRelatedPosts } from "@/components/blog/blog-related-posts"
 import { BlogComments } from "@/components/blog/blog-comments"
-import { ThemeToggle } from "@/components/theme-toggle"
 
 // Mock blog post data
 const blogPosts = [

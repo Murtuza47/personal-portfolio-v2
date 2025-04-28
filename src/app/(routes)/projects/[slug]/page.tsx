@@ -8,7 +8,7 @@ import { ArrowLeft, ArrowRight, Calendar, ExternalLink, Github, Globe, User } fr
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { CursorEffect } from "@/components/cursor-effect"
-import { ThemeToggle } from "@/components/theme-toggle"
+import { ThemeToggle } from "@/components/theme/theme-toggle"
 
 // Project data
 const projects = [

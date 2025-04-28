@@ -3,14 +3,13 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { BlogPostCard } from "@/components/blog/blog-post-card"
 import { BlogCategories } from "@/components/blog/blog-categories"
 import { BlogSearch } from "@/components/blog/blog-search"
 import { BlogPagination } from "@/components/blog/blog-pagination"
-import { HeroAnimation } from "@/components/animation/hero-animation"
+import { HomeAnimation } from "@/components/animation/home-animation"
 import { AnimatedBadge } from "@/components/animation/animated-badge"
-import { CTASection } from "@/containers/cta-section"
+import { CTASection } from "@/containers/home/cta-section"
 
 // Mock data for blog posts
 const blogPosts = [
@@ -182,7 +181,7 @@ export default function BlogPage() {
       {/* Hero Section */}
       <section className="relative h-[calc(100vh-65px)] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <HeroAnimation />
+          <HomeAnimation />
         </div>
         <div className="container">
           <div className="mx-auto max-w-2xl text-center">
