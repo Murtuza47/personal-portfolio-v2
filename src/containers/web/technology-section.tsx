@@ -82,10 +82,6 @@ export function WebTechnologySection() {
                     alt={tech.name} 
                     fill
                     className="object-contain"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.src = "/assets/tech/placeholder.svg";
-                    }}
                   />
                 </div>
                 <p className="font-medium text-sm text-center">{tech.name}</p>
@@ -104,10 +100,6 @@ export function WebTechnologySection() {
                     alt={tech.name} 
                     fill
                     className="object-contain"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.src = "/assets/tech/placeholder.svg";
-                    }}
                   />
                 </div>
                 <p className="font-medium text-sm text-center">{tech.name}</p>
