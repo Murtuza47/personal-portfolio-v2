@@ -4,39 +4,36 @@ import Image from "next/image";
 
 export function WebOverviewSection() {
   return (
-    <section className="py-12 sm:py-20 bg-muted/30">
+    <section className="relative py-20 sm:py-20 md:py-20 lg:h-[calc(100vh-65px)] lg:flex lg:items-center lg:justify-center lg:overflow-hidden bg-muted/30">
       <div className="container">
         <div className="grid gap-8 md:gap-12 md:grid-cols-2 items-center">
           <div className="space-y-4 sm:space-y-6">
             <Badge className="px-3 py-1 text-sm rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
-              Overview
+              About My Web Development Services
             </Badge>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">Crafting exceptional web experiences</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">A Decade of Providing Performance-Driven Web Applications</h2>
             <p className="text-muted-foreground">
-              I specialize in building modern, high-performance websites and web applications that provide exceptional
-              user experiences. Using the latest technologies and best practices, I create solutions that are not only
-              visually appealing but also functional, accessible, and optimized for search engines.
-            </p>
-            <p className="text-muted-foreground">
-              Whether you need a simple landing page, a complex e-commerce platform, or a custom web application, I
-              have the skills and experience to bring your vision to life.
+              We craft high-performance web applications that scale with your business needs. Whether you’re launching 
+              an MVP for a startup or building a robust enterprise-level application, we deliver solutions that focus on 
+              user experience, security, and performance. Our full-stack approach covers both frontend and backend development, 
+              ensuring your web applications are functional but also intuitive and seamless.
             </p>
             <div className="space-y-3">
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                <p>Responsive designs that work flawlessly across all devices</p>
+                <p><strong>End-to-end development</strong> from idea to deployment.</p>
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                <p>Fast-loading, optimized code for better performance</p>
+                <p><strong>Custom-built solutions</strong> tailored to your specific needs.</p>
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                <p>SEO-friendly structure to improve visibility</p>
+                <p><strong>User-friendly designs</strong> that enhance customer engagement.</p>
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                <p>Accessible interfaces that comply with WCAG guidelines</p>
+                <p><strong>High-performance applications</strong> optimized for speed and scalability.</p>
               </div>
             </div>
           </div>

@@ -119,49 +119,49 @@ export function Header() {
             >
               <Link 
                 href="/services/web-development" 
-                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-all duration-100 hover:translate-x-2"
               >
                 Web Development
               </Link>
               <Link 
                 href="/services/mobile-development" 
-                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-all duration-100 hover:translate-x-2"
               >
                 Mobile Development
               </Link>
               <Link 
                 href="/services/migration" 
-                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-all duration-100 hover:translate-x-2"
               >
                 Migration Services
               </Link>
               <Link 
                 href="/services/web-scraping" 
-                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-all duration-100 hover:translate-x-2"
               >
                 Web Scraping
               </Link>
               <Link 
                 href="/services/ecommerce" 
-                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-all duration-100 hover:translate-x-2"
               >
                 E-Commerce Solutions
               </Link>
               <Link 
                 href="/services/performance" 
-                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-all duration-100 hover:translate-x-2"
               >
                 Performance Optimization
               </Link>
               <Link 
                 href="/services/consulting" 
-                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-all duration-100 hover:translate-x-2"
               >
                 Technical Consulting
               </Link>
               <Link 
                 href="/services/ai" 
-                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-colors"
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-all duration-100 hover:translate-x-2"
               >
                 AI Agents & Automation
               </Link>

@@ -11,49 +11,47 @@ export function WebFAQSection() {
           <Badge className="px-3 py-1 text-sm rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
             FAQ
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Frequently asked questions</h2>
-          <p className="text-muted-foreground">Answers to common questions about my web development services.</p>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">FAQ – Get Answers Before We Start</h2>
+          <p className="text-muted-foreground">Still curious? Here are the most common questions clients ask before we kick off a project.</p>
         </div>
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>How long does it take to build a website?</AccordionTrigger>
+              <AccordionTrigger>What is full-stack development, and why do I need it?</AccordionTrigger>
               <AccordionContent>
-                The timeline varies depending on the complexity of the project. A basic website typically takes 2-4
-                weeks, while more complex projects can take 2-3 months. I'll provide a detailed timeline during our
-                initial consultation.
+              Full-stack development covers both frontend and backend development. It ensures your
+              web application is seamless, scalable, and fully functional.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>Do you provide website maintenance services?</AccordionTrigger>
+              <AccordionTrigger>Can you build mobile applications as part of full-stack development?</AccordionTrigger>
               <AccordionContent>
-                Yes, I offer ongoing maintenance packages to keep your website secure, up-to-date, and performing
-                optimally. These packages include regular updates, security monitoring, backups, and technical
-                support.
+                Yes, we offer both web and mobile development as part of our full-stack services.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>Will my website be mobile-friendly?</AccordionTrigger>
+              <AccordionTrigger>How long does it take to build a custom web application?</AccordionTrigger>
               <AccordionContent>
-                All websites I build are fully responsive and optimized for all devices, including smartphones,
-                tablets, and desktop computers. This ensures your users have a seamless experience regardless of the
-                device they're using.
+                Timelines vary depending on complexity, but we provide a clear project timeline 
+                and milestones from the beginning.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>Do you help with website hosting?</AccordionTrigger>
+              <AccordionTrigger>What technologies do you use for full-stack development?</AccordionTrigger>
               <AccordionContent>
-                Yes, I can recommend and set up reliable hosting solutions based on your specific needs. I work with
-                industry-leading hosting providers to ensure your website is fast, secure, and has excellent uptime.
+                We use cutting-edge technologies such as <strong>React, Node.js, and Python</strong> ensuring optimal performance and security.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger>Can you help with SEO for my website?</AccordionTrigger>
+              <AccordionTrigger>Will my web application be scalable for future growth?</AccordionTrigger>
               <AccordionContent>
-                Yes, I implement SEO best practices during the development process to ensure your website is optimized
-                for search engines. This includes proper HTML structure, fast loading times, mobile optimization, and
-                other on-page SEO factors. For more comprehensive SEO services, I can create a custom strategy for
-                your business.
+                Yes, scalability is a key focus of our development process. We build applications that grow with your business needs.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6">
+              <AccordionTrigger>Do you offer ongoing maintenance services?</AccordionTrigger>
+              <AccordionContent>
+                Yes, we offer ongoing maintenance services to keep your application running smoothly.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

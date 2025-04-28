@@ -12,27 +12,29 @@ export function WebHomeSection() {
         </div>
         <div className="container relative z-10">
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
-            <Link href="/" className="inline-flex items-center text-sm text-muted-foreground hover:text-primary mb-6">
-              <ArrowLeft className="mr-2 h-4 w-4" />
+            <Link href="/" className="inline-flex items-center text-sm text-muted-foreground hover:text-primary mb-6 group">
+              <ArrowLeft className="mr-2 h-4 w-4 transition-transform duration-200 group-hover:-translate-x-1" />
               Back to Home
             </Link>
             <Badge className="mb-4 px-3 py-1 text-sm rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
               Web Development
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              Modern Web Development Solutions
+              Web Development Solutions
             </h1>
+            <p className="text-xl text-muted-foreground mb-8 max-w-2xl font-bold">
+              "Your Vision, My Code – Building Scalable Web Applications."
+            </p>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-              Creating fast, responsive, and user-friendly websites and web applications that drive results for your
-              business.
+              Take the first step toward transforming your idea into a fully functional, user-friendly web app today!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="group">
-                Get Started
+                GET A FREE ESTIMATE/ DEMO WEBSITE  
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button size="lg" variant="outline">
-                View Portfolio
+                Contact Me
               </Button>
             </div>
           </div>

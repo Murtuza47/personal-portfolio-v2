@@ -32,7 +32,7 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="space-y-4">
             <Link href="/" className="font-bold text-xl inline-block">
-              Hello, I’m <span className="text-primary">Ali</span> Murtaza
+              Hello, I'm <span className="text-primary">Ali</span> Murtaza
             </Link>
             <p className="text-muted-foreground">
               A full-stack developer blending code, automation, and intelligent design to build future-ready digital solutions.
@@ -45,7 +45,7 @@ export function Footer() {
               <li>
                 <Link 
                   href="/#home" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
                   onClick={(e) => handleSmoothScroll(e, "home")}
                 >
                   Home
@@ -54,7 +54,7 @@ export function Footer() {
               <li>
                 <Link 
                   href="/#about" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
                   onClick={(e) => handleSmoothScroll(e, "about")}
                 >
                   About
@@ -63,7 +63,7 @@ export function Footer() {
               <li>
                 <Link 
                   href="/#services" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
                   onClick={(e) => handleSmoothScroll(e, "services")}
                 >
                   Services
@@ -72,7 +72,7 @@ export function Footer() {
               <li>
                 <Link 
                   href="/#portfolio" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
                   onClick={(e) => handleSmoothScroll(e, "portfolio")}
                 >
                   Portfolio
@@ -81,19 +81,25 @@ export function Footer() {
               <li>
                 <Link 
                   href="/#contact" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
                   onClick={(e) => handleSmoothScroll(e, "contact")}
                 >
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/blogs" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  href="/blogs" 
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
+                >
                   Blogs
                 </Link>
               </li>
               <li>
-                <Link href="/projects" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  href="/projects" 
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
+                >
                   Projects
                 </Link>
               </li>
@@ -105,48 +111,72 @@ export function Footer() {
               <li>
                 <Link
                   href="/services/web-development"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
                 >
                   Web Development
                 </Link>
               </li>
               <li>
-                <Link href="/services/mobile-development" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  href="/services/mobile-development" 
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
+                >
                   Mobile Development
                 </Link>
               </li>
               <li>
-                <Link href="/services/migration" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  href="/services/migration" 
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
+                >
                   Migration Services
                 </Link>
               </li>
               <li>
-                <Link href="/services/web-scraping" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  href="/services/web-scraping" 
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
+                >
                   Web Scraping
                 </Link>
               </li>
               <li>
-                <Link href="/services/ecommerce" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  href="/services/ecommerce" 
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
+                >
                   E-Commerce Solutions
                 </Link>
               </li>
               <li>
-                <Link href="/services/seo" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  href="/services/seo" 
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
+                >
                   SEO & Web Analytics
                 </Link>
               </li>
               <li>
-                <Link href="/services/performance" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  href="/services/performance" 
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
+                >
                   Performance Optimization
                 </Link>
               </li>
               <li>
-                <Link href="/services/consulting" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  href="/services/consulting" 
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
+                >
                   Technical Consulting
                 </Link>
               </li>
               <li>
-                <Link href="/services/ai" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link 
+                  href="/services/ai" 
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
+                >
                   AI Agents & Automation
                 </Link>
               </li>
