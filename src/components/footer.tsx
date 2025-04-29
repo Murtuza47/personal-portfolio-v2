@@ -126,10 +126,10 @@ export function Footer() {
               </li>
               <li>
                 <Link 
-                  href="/services/migration" 
+                  href="/services/migration-solutions" 
                   className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
                 >
-                  Migration Services
+                  Migration Solutions
                 </Link>
               </li>
               <li>
@@ -142,7 +142,7 @@ export function Footer() {
               </li>
               <li>
                 <Link 
-                  href="/services/ecommerce" 
+                  href="/services/ecommerce-solutions" 
                   className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
                 >
                   E-Commerce Solutions

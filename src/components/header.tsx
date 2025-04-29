@@ -130,10 +130,10 @@ export function Header() {
                 Mobile Development
               </Link>
               <Link 
-                href="/services/migration" 
+                href="/services/migration-solutions" 
                 className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-all duration-100 hover:translate-x-2"
               >
-                Migration Services
+                Migration Solutions
               </Link>
               <Link 
                 href="/services/web-scraping" 
@@ -142,7 +142,7 @@ export function Header() {
                 Web Scraping
               </Link>
               <Link 
-                href="/services/ecommerce" 
+                href="/services/ecommerce-solutions" 
                 className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-all duration-100 hover:translate-x-2"
               >
                 E-Commerce Solutions
