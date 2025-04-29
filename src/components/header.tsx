@@ -160,7 +160,7 @@ export function Header() {
                 Technical Consulting
               </Link>
               <Link 
-                href="/services/ai" 
+                href="/services/ai-automation" 
                 className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-all duration-100 hover:translate-x-2"
               >
                 AI Agents & Automation
