@@ -47,7 +47,7 @@ export function HomeSection() {
             <div className="relative hidden md:block">
               <div className="relative z-10 aspect-square overflow-hidden rounded-full border-4 border-background shadow-xl mx-auto max-w-md">
                 <Image
-                  src="/assets/img_01.jpg"
+                  src="/assets/img_01.JPG"
                   alt="Ali Murtaza"
                   fill
                   className="object-cover object-top"
