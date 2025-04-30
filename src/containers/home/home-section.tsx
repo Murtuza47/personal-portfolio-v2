@@ -45,16 +45,19 @@ export function HomeSection() {
               <SocialLinks />
             </div>
             <div className="relative hidden md:block">
-              <div className="relative z-10 aspect-square overflow-hidden rounded-full border-4 border-background shadow-xl mx-auto max-w-md">
-                <Image
-                  src="/assets/img_01.JPG"
-                  alt="Ali Murtaza"
-                  fill
-                  className="object-cover object-top"
-                  priority
-                />
+              <div className="relative z-10 aspect-square overflow-hidden rounded-full border-4 border-transparent shadow-xl mx-auto max-w-md bg-gradient-to-br from-primary/25 via-primary/15 to-primary/10 dark:from-primary/20 dark:via-primary/12 dark:to-primary/8 p-[2px]">
+                <div className="relative h-full w-full rounded-full overflow-hidden">
+                  <Image
+                    src="/assets/img_01.JPG"
+                    alt="Ali Murtaza"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                  />
+                </div>
               </div>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full bg-gradient-to-br from-primary/20 to-primary/5 blur-3xl -z-10" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full bg-gradient-to-br from-primary/25 via-primary/15 to-primary/10 dark:from-primary/20 dark:via-primary/12 dark:to-primary/8 blur-3xl -z-10" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] rounded-full bg-gradient-to-br from-primary/20 via-primary/12 to-transparent dark:from-primary/15 dark:via-primary/10 dark:to-transparent blur-xl -z-10 animate-[pulse_4s_ease-in-out_infinite]" />
             </div>
 
             {/* <div className="relative md:hidden mx-auto">

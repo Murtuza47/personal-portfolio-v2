@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
+import { GradientCard } from "@/components/ui/gradient-card";
 
 export function MigrationProcessSection() {
   return (
@@ -14,67 +14,33 @@ export function MigrationProcessSection() {
           </h2>
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
-          <Card className="bg-background border-2 border-primary/10">
-            <CardContent className="p-6 space-y-4">
-              <div className="h-12 w-12 rounded-lg flex items-center justify-center bg-primary/10 text-primary">
-                <span className="text-xl font-bold">01</span>
-              </div>
-              <h3 className="text-xl font-bold">Assessment & Planning</h3>
-              <p className="text-muted-foreground">
-                We evaluate your current setup, define goals, and identify risks.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-background border-2 border-primary/10">
-            <CardContent className="p-6 space-y-4">
-              <div className="h-12 w-12 rounded-lg flex items-center justify-center bg-primary/10 text-primary">
-                <span className="text-xl font-bold">02</span>
-              </div>
-              <h3 className="text-xl font-bold">Blueprint Design</h3>
-              <p className="text-muted-foreground">
-                We develop a custom migration strategy aligned with your business operations.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-background border-2 border-primary/10">
-            <CardContent className="p-6 space-y-4">
-              <div className="h-12 w-12 rounded-lg flex items-center justify-center bg-primary/10 text-primary">
-                <span className="text-xl font-bold">03</span>
-              </div>
-              <h3 className="text-xl font-bold">Pre-Migration Testing</h3>
-              <p className="text-muted-foreground">
-                We perform test runs in a sandbox environment to verify accuracy.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-background border-2 border-primary/10">
-            <CardContent className="p-6 space-y-4">
-              <div className="h-12 w-12 rounded-lg flex items-center justify-center bg-primary/10 text-primary">
-                <span className="text-xl font-bold">04</span>
-              </div>
-              <h3 className="text-xl font-bold">Secure Migration Execution</h3>
-              <p className="text-muted-foreground">
-                Real-time data and asset transfer without disruption or loss.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-background border-2 border-primary/10">
-            <CardContent className="p-6 space-y-4">
-              <div className="h-12 w-12 rounded-lg flex items-center justify-center bg-primary/10 text-primary">
-                <span className="text-xl font-bold">05</span>
-              </div>
-              <h3 className="text-xl font-bold">Post-Migration Support</h3>
-              <p className="text-muted-foreground">
-                We provide testing, tweaks, and 24/7 support to ensure everything works perfectly.
-              </p>
-            </CardContent>
-          </Card>
+          <GradientCard
+            number="01"
+            title="Assessment & Planning"
+            description="We evaluate your current setup, define goals, and identify risks."
+          />
+          <GradientCard
+            number="02"
+            title="Blueprint Design"
+            description="We develop a custom migration strategy aligned with your business operations."
+          />
+          <GradientCard
+            number="03"
+            title="Pre-Migration Testing"
+            description="We perform test runs in a sandbox environment to verify accuracy."
+          />
+          <GradientCard
+            number="04"
+            title="Secure Migration Execution"
+            description="Real-time data and asset transfer without disruption or loss."
+          />
+          <GradientCard
+            number="05"
+            title="Post-Migration Support"
+            description="We provide testing, tweaks, and 24/7 support to ensure everything works perfectly."
+          />
         </div>
       </div>
     </section>
-  )
+  );
 }

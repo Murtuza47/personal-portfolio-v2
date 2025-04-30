@@ -20,14 +20,18 @@ export function AboutSection() {
       <div className="container px-4 sm:px-6">
         <div className="grid gap-12 md:grid-cols-2 items-center">
           <div className="relative">
-            <div className="relative z-10 rounded-2xl overflow-hidden border-8 border-background shadow-xl">
-              <Image
-                src="/assets/img_02.JPG"
-                alt="About Ali Murtaza"
-                width={600}
-                height={600}
-                className="w-full object-cover"
-              />
+            <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-primary/20 dark:from-primary/30 dark:via-transparent dark:to-primary/30 rounded-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-primary/10 dark:from-primary/20 dark:via-transparent dark:to-primary/20 rounded-2xl" />
+              <div className="relative rounded-2xl overflow-hidden border-4 border-transparent">
+                <Image
+                  src="/assets/img_02.JPG"
+                  alt="About Ali Murtaza"
+                  width={600}
+                  height={600}
+                  className="w-full object-cover"
+                />
+              </div>
             </div>
             <div className="absolute top-8 -right-4 sm:-right-8 z-20 bg-background rounded-lg p-3 sm:p-4 shadow-lg">
               <div className="grid grid-cols-2 gap-3 sm:gap-4">
@@ -86,7 +90,7 @@ export function AboutSection() {
               </div>
             </div>
             <p className="text-muted-foreground">
-              I don’t just build applications — I solve real problems with purpose-built technology that works for you.
+              I don't just build applications — I solve real problems with purpose-built technology that works for you.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-1">
