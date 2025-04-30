@@ -22,7 +22,7 @@ export function AboutSection() {
           <div className="relative">
             <div className="relative z-10 rounded-2xl overflow-hidden border-8 border-background shadow-xl">
               <Image
-                src="/assets/IMG_02.jpg"
+                src="/assets/img_02.jpg"
                 alt="About Ali Murtaza"
                 width={600}
                 height={600}
