@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { GradientCard } from "@/components/ui/gradient-card";
 
-export function AIAutomationProcessSection() {
+export function AIProcessSection() {
   return (
     <section className="relative py-20 md:py-20 lg:h-[calc(100vh-65px)] lg:flex lg:items-center lg:justify-center lg:overflow-hidden">
       <div className="container">
