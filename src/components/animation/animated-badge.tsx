@@ -14,7 +14,7 @@ export function AnimatedBadge({ prefix = "I'm a", services, className }: Animate
   return (
     <Badge
       className={cn(
-        "px-5 py-2 text-base font-medium rounded-full bg-primary/10 text-primary border-2 border-primary/20 hover:bg-primary/20 transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 animate-border relative z-50 w-[200px]",
+        "px-5 py-2 text-base font-medium rounded-full bg-primary/10 text-primary border-2 border-primary/20 hover:bg-primary/20 transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 animate-border relative z-50",
         className,
       )}
     >

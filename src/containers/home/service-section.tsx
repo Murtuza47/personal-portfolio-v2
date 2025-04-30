@@ -27,7 +27,7 @@ export function ServiceSection() {
   };
 
   return (
-    <section id="services" className="py-20">
+    <section id="services" className="py-20 bg-muted/30">
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
           <Badge className="px-3 py-1 text-sm rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
@@ -58,11 +58,11 @@ export function ServiceSection() {
             />
           </Link>
           <Link
-            href="/services/migration"
+            href="/services/migration-solutions"
           >
             <ServiceCard
               icon="move"
-              title="Migration Services"
+              title="Migration Solutions"
               description="Seamlessly move from outdated systems to modern platforms without losing a byte."
             />
           </Link>
@@ -76,7 +76,7 @@ export function ServiceSection() {
             />
           </Link>
           <Link
-            href="/services/ecommerce"
+            href="/services/ecommerce-solutions"
           >
             <ServiceCard
               icon="shopping-bag"
@@ -85,7 +85,7 @@ export function ServiceSection() {
             />
           </Link>
           <Link
-            href="/services/performance"
+            href="/services/performance-optimization"
           >
             <ServiceCard
               icon="zap"
@@ -94,7 +94,7 @@ export function ServiceSection() {
             />
           </Link>
           <Link
-            href="/services/consulting"
+            href="/services/technical-consulting"
           >
             <ServiceCard
               icon="briefcase"
@@ -103,7 +103,16 @@ export function ServiceSection() {
             />
           </Link>
           <Link
-            href="/services/ai"
+            href="/services/SPFx"
+          >
+            <ServiceCard
+              icon="layout"
+              title="SharePoint Framework (SPFx)"
+              description="Extend Microsoft 365 with powerful, custom-built SharePoint solutions tailored for your team."
+            />
+          </Link>
+          <Link
+            href="/services/ai-automation"
           >
             <ServiceCard
               icon="cpu"

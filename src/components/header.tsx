@@ -148,16 +148,22 @@ export function Header() {
                 E-Commerce Solutions
               </Link>
               <Link 
-                href="/services/performance" 
+                href="/services/performance-optimization" 
                 className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-all duration-100 hover:translate-x-2"
               >
                 Performance Optimization
               </Link>
               <Link 
-                href="/services/consulting" 
+                href="/services/technical-consulting" 
                 className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-all duration-100 hover:translate-x-2"
               >
                 Technical Consulting
+              </Link>
+              <Link 
+                href="/services/SPFx" 
+                className="block px-2 py-1.5 text-sm rounded-sm text-foreground/60 hover:text-primary hover:bg-accent/20 transition-all duration-100 hover:translate-x-2"
+              >
+                SharePoint Framework Development
               </Link>
               <Link 
                 href="/services/ai-automation" 

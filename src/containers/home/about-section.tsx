@@ -9,23 +9,23 @@ import Image from "next/image";
 export function AboutSection() {
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/assets/Ali Murtaza Resume.pdf';
+    link.href = '/pdf/Ali Murtaza Resume.pdf';
     link.download = 'Ali Murtaza Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   }
   return (
-    <section id="about" className="py-16 sm:py-20 bg-muted/30">
+    <section id="about" className="py-16 sm:py-20">
       <div className="container px-4 sm:px-6">
         <div className="grid gap-12 md:grid-cols-2 items-center">
           <div className="relative">
             <div className="relative z-10 rounded-2xl overflow-hidden border-8 border-background shadow-xl">
               <Image
-                src=""
+                src="/assets/IMG_02.jpg"
                 alt="About Ali Murtaza"
                 width={600}
-                height={640}
+                height={600}
                 className="w-full object-cover"
               />
             </div>
@@ -61,7 +61,7 @@ export function AboutSection() {
             </div>
             <p className="text-muted-foreground">
               I build modern, scalable, and intelligent digital solutions for businesses that want more than just
-              code—they want results. With 10+ years of hands-on experience, I fuse development with innovation,
+              code—they want results. With 4+ years of hands-on experience, I fuse development with innovation,
               delivering robust, secure, and automation-driven products.
             </p>
             <p className="text-muted-foreground font-bold text-lg">

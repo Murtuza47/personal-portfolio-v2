@@ -12,18 +12,14 @@ export default function WebDevelopmentPage() {
 
       <WebOverviewSection />
 
-      {/* Process Section */}
       <WebProcessSection />
 
-      {/* Technologies Section */}
       <WebTechnologySection />
 
       {/* Pricing Section */}
 
-      {/* FAQ Section */}
       <WebFAQSection />
 
-      {/* CTA Section */}
       <WebCTASection />
     </>
   )

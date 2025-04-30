@@ -150,15 +150,7 @@ export function Footer() {
               </li>
               <li>
                 <Link 
-                  href="/services/seo" 
-                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
-                >
-                  SEO & Web Analytics
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/services/performance" 
+                  href="/services/performance-optimization" 
                   className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
                 >
                   Performance Optimization
@@ -166,7 +158,7 @@ export function Footer() {
               </li>
               <li>
                 <Link 
-                  href="/services/consulting" 
+                  href="/services/technical-consulting" 
                   className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
                 >
                   Technical Consulting
@@ -174,7 +166,15 @@ export function Footer() {
               </li>
               <li>
                 <Link 
-                  href="/services/ai" 
+                  href="/services/SPFx" 
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
+                >
+                  SharePoint Framework Development
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/services/ai-automation" 
                   className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
                 >
                   AI Agents & Automation

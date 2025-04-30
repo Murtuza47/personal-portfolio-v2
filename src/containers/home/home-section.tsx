@@ -23,6 +23,7 @@ export function HomeSection() {
                 <AnimatedBadge
                   prefix="I'm a"
                   services={["Web Developer", "Mobile Dev", "Consultant", "Tech Expert", "Full-Stack Dev"]}
+                  className="w-[200px]"
                 />
                 <AnimatedText
                   text="I Built Smart & Scalable Solutions"
@@ -46,30 +47,28 @@ export function HomeSection() {
             <div className="relative hidden md:block">
               <div className="relative z-10 aspect-square overflow-hidden rounded-full border-4 border-background shadow-xl mx-auto max-w-md">
                 <Image
-                  src=""
+                  src="/assets/img_01.jpg"
                   alt="Ali Murtaza"
-                  width={600}
-                  height={600}
-                  className="object-cover"
+                  fill
+                  className="object-cover object-top"
                   priority
                 />
               </div>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full bg-gradient-to-br from-primary/20 to-primary/5 blur-3xl -z-10" />
             </div>
 
-            <div className="relative md:hidden mx-auto">
+            {/* <div className="relative md:hidden mx-auto">
               <div className="relative z-10 aspect-square overflow-hidden rounded-full border-4 border-background shadow-xl mx-auto max-w-[250px]">
                 <Image
-                  src="/placeholder.svg?height=600&width=600"
+                  src="/assets/img_01.jpg"
                   alt="Ali Murtaza"
-                  width={600}
-                  height={600}
-                  className="object-cover"
+                  fill
+                  className="object-cover object-top"
                   priority
                 />
               </div>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full bg-gradient-to-br from-primary/20 to-primary/5 blur-3xl -z-10" />
-            </div>
+            </div> */}
           </div>
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden md:block">
             <Link

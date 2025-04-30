@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function PortfolioSection() {
   return (
-    <section id="portfolio" className="py-20 bg-muted/30">
+    <section id="portfolio" className="py-20">
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
           <Badge className="px-3 py-1 text-sm rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
