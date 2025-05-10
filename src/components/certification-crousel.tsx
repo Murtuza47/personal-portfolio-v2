@@ -49,9 +49,17 @@ export function CertificationCarousel({ certificates }: { certificates: ICertifi
   // Setup autoplay
   useEffect(() => {
     if (autoplay) {
+      // Clear any existing interval first
+      if (autoplayRef.current) {
+        clearInterval(autoplayRef.current)
+      }
+      
+      // Set new interval
       autoplayRef.current = setInterval(() => {
-        nextCertificate()
-      }, 5)
+        if (!isAnimating) {
+          nextCertificate()
+        }
+      }, 5000)
     }
 
     return () => {
@@ -59,7 +67,7 @@ export function CertificationCarousel({ certificates }: { certificates: ICertifi
         clearInterval(autoplayRef.current)
       }
     }
-  }, [autoplay, currentIndex])
+  }, [autoplay]) // Only depend on autoplay state, not currentIndex
 
   // Pause autoplay on hover
   const handleMouseEnter = () => {

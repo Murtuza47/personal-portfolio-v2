@@ -11,17 +11,44 @@ export function MobileTechnologySection() {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer) return;
 
+    let isScrolling = true;
+    let scrollAmount = 1; // Reduced scroll speed for smoother movement
+
     const scroll = () => {
+      if (!isScrolling) return;
+      
       if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
         scrollContainer.scrollLeft = 0;
       } else {
-        scrollContainer.scrollLeft += 2;
+        scrollContainer.scrollLeft += scrollAmount;
       }
     };
 
-    const intervalId = setInterval(scroll, 20);
+    const intervalId = setInterval(scroll, 30); // Increased interval for smoother scrolling
 
-    return () => clearInterval(intervalId);
+    // Pause scrolling on touch/mouse interaction
+    const handleInteractionStart = () => {
+      isScrolling = false;
+    };
+
+    const handleInteractionEnd = () => {
+      isScrolling = true;
+    };
+
+    scrollContainer.addEventListener('touchstart', handleInteractionStart);
+    scrollContainer.addEventListener('mousedown', handleInteractionStart);
+    scrollContainer.addEventListener('touchend', handleInteractionEnd);
+    scrollContainer.addEventListener('mouseup', handleInteractionEnd);
+    scrollContainer.addEventListener('mouseleave', handleInteractionEnd);
+
+    return () => {
+      clearInterval(intervalId);
+      scrollContainer.removeEventListener('touchstart', handleInteractionStart);
+      scrollContainer.removeEventListener('mousedown', handleInteractionStart);
+      scrollContainer.removeEventListener('touchend', handleInteractionEnd);
+      scrollContainer.removeEventListener('mouseup', handleInteractionEnd);
+      scrollContainer.removeEventListener('mouseleave', handleInteractionEnd);
+    };
   }, []);
 
   const technologies = [
