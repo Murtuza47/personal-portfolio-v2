@@ -8,7 +8,7 @@ export function ContactSection() {
   return (
     <section 
       id="contact" 
-      className="relative py-16 md:py-20 lg:h-[calc(100vh-65px)] lg:flex lg:items-center lg:justify-center lg:overflow-hidden bg-muted/30"
+      className="relative py-16 md:py-20 lg:h-[calc(100vh-65px)] lg:flex lg:items-center lg:justify-center lg:overflow-hidden"
     >
       <div className="container">
         <div className="grid gap-12 md:grid-cols-2 items-start">

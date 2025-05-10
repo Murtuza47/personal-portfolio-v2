@@ -25,24 +25,16 @@ export function WebScrapingTechnologySection() {
   }, []);
 
   const technologies = [
-    { name: "React", icon: "/assets/tech/react.svg" },
-    { name: "Next.js", icon: "/assets/tech/nextjs.svg" },
-    { name: "Tailwind CSS", icon: "/assets/tech/tailwind.svg" },
-    { name: "TypeScript", icon: "/assets/tech/typescript.svg" },
-    { name: "Node.js", icon: "/assets/tech/nodejs.svg" },
-    { name: "MongoDB", icon: "/assets/tech/mongodb.svg" },
-    { name: "GraphQL", icon: "/assets/tech/graphql.svg" },
-    { name: "PostgreSQL", icon: "/assets/tech/postgresql.svg" },
-    { name: "Vercel", icon: "/assets/tech/vercel.svg" },
-    { name: "AWS", icon: "/assets/tech/aws.svg" },
-    { name: "Docker", icon: "/assets/tech/docker.svg" },
-    { name: "Git", icon: "/assets/tech/git.svg" },
-    { name: "JavaScript", icon: "/assets/tech/javascript.svg" },
-    { name: "HTML5", icon: "/assets/tech/html5.svg" },
-    { name: "CSS3", icon: "/assets/tech/css3.svg" },
-    { name: "Redux", icon: "/assets/tech/redux.svg" },
-    { name: "Express", icon: "/assets/tech/express.svg" },
-    { name: "Firebase", icon: "/assets/tech/firebase.svg" },
+    { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+    { name: "Selenium", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" },
+    { name: "BeautifulSoup", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+    { name: "Scrapy", icon: "https://img.icons8.com/color/48/spider.png" },
+    { name: "Playwright", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg" },
+    { name: "Puppeteer", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/puppeteer/puppeteer-original.svg" },
+    { name: "Requests", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+    { name: "Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
+    { name: "NumPy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
+    { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
   ];
 
   return (

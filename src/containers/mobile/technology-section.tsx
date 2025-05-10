@@ -15,34 +15,36 @@ export function MobileTechnologySection() {
       if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
         scrollContainer.scrollLeft = 0;
       } else {
-        scrollContainer.scrollLeft += 1;
+        scrollContainer.scrollLeft += 2;
       }
     };
 
-    const intervalId = setInterval(scroll, 30);
+    const intervalId = setInterval(scroll, 20);
 
     return () => clearInterval(intervalId);
   }, []);
 
   const technologies = [
-    { name: "React", icon: "/assets/tech/react.svg" },
-    { name: "Next.js", icon: "/assets/tech/nextjs.svg" },
-    { name: "Tailwind CSS", icon: "/assets/tech/tailwind.svg" },
-    { name: "TypeScript", icon: "/assets/tech/typescript.svg" },
-    { name: "Node.js", icon: "/assets/tech/nodejs.svg" },
-    { name: "MongoDB", icon: "/assets/tech/mongodb.svg" },
-    { name: "GraphQL", icon: "/assets/tech/graphql.svg" },
-    { name: "PostgreSQL", icon: "/assets/tech/postgresql.svg" },
-    { name: "Vercel", icon: "/assets/tech/vercel.svg" },
-    { name: "AWS", icon: "/assets/tech/aws.svg" },
-    { name: "Docker", icon: "/assets/tech/docker.svg" },
-    { name: "Git", icon: "/assets/tech/git.svg" },
-    { name: "JavaScript", icon: "/assets/tech/javascript.svg" },
-    { name: "HTML5", icon: "/assets/tech/html5.svg" },
-    { name: "CSS3", icon: "/assets/tech/css3.svg" },
-    { name: "Redux", icon: "/assets/tech/redux.svg" },
-    { name: "Express", icon: "/assets/tech/express.svg" },
-    { name: "Firebase", icon: "/assets/tech/firebase.svg" },
+    { name: "React Native", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+    { name: "Expo", icon: "https://cdn.simpleicons.org/expo/000020" },
+    { name: "React Native CLI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+    { name: "Android", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" },
+    { name: "iOS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" },
+    { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
+    { name: "Redux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
+    { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+    { name: "GraphQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" },
+    { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+    { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+    { name: "GraphQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" },
+    { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+    { name: "AWS", icon: "https://img.icons8.com/color/96/amazon-web-services.png" },
+    { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+    { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+    { name: "Jest", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" },
+    { name: "Webpack", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" },
+    { name: "Xcode", icon: "https://cdn.simpleicons.org/xcode" },
+    { name: "Gradle", icon: "https://cdn.simpleicons.org/gradle/02303A" },
   ];
 
   return (

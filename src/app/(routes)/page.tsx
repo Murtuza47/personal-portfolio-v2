@@ -4,6 +4,7 @@ import { HomeSection } from "@/containers/home/home-section"
 import { ServiceSection } from "@/containers/home/service-section"
 import { PortfolioSection } from "@/containers/home/portfolio-section"
 import { ContactSection } from "@/containers/home/contact-section"
+import { CertificateSection } from "@/containers/home/certificate-section"
 // import { TestimonialSection } from "@/containers/testimonial-section"
 
 export default function Home() {
@@ -16,6 +17,8 @@ export default function Home() {
       <ServiceSection />
 
       <PortfolioSection />
+
+      <CertificateSection />
 
       {/* <TestimonialSection /> */}
 

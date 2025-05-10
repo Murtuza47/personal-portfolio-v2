@@ -13,7 +13,7 @@ export function WebOverviewSection() {
             </Badge>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">A Decade of Providing Performance-Driven Web Applications</h2>
             <p className="text-muted-foreground">
-              We craft high-performance web applications that scale with your business needs. Whether you’re launching 
+              We craft high-performance web applications that scale with your business needs. Whether you're launching 
               an MVP for a startup or building a robust enterprise-level application, we deliver solutions that focus on 
               user experience, security, and performance. Our full-stack approach covers both frontend and backend development, 
               ensuring your web applications are functional but also intuitive and seamless.

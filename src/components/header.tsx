@@ -22,14 +22,15 @@ export function Header() {
     }
 
     const handleScroll = () => {
-      const sections = ["home", "about", "services", "portfolio", "contact"]
+      const sections = ["home", "about", "services", "portfolio", "certifications", "contact"]
       const scrollPosition = window.scrollY + 100 // offset for header height
 
       for (const section of sections) {
         const element = document.getElementById(section)
         if (element) {
-          const top = element.offsetTop
-          const height = element.offsetHeight
+          const rect = element.getBoundingClientRect()
+          const top = rect.top + window.scrollY
+          const height = rect.height
           if (scrollPosition >= top && scrollPosition < top + height) {
             setActiveSection(section)
             break
@@ -197,6 +198,18 @@ export function Header() {
             onClick={(e) => handleSmoothScroll(e, "portfolio")}
           >
             Portfolio
+          </Link>
+          <Link 
+            href="/#certifications" 
+            className={cn(
+              "text-sm font-medium transition-colors",
+              isActive("/#certifications") 
+                ? "text-primary" 
+                : "text-foreground/60 hover:text-primary"
+            )}
+            onClick={(e) => handleSmoothScroll(e, "certifications")}
+          >
+            Certifications
           </Link>
           <Link 
             href="/#contact" 

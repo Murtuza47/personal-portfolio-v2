@@ -15,38 +15,46 @@ export function WebTechnologySection() {
       if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
         scrollContainer.scrollLeft = 0;
       } else {
-        scrollContainer.scrollLeft += 1;
+        scrollContainer.scrollLeft += 2;
       }
     };
 
-    const intervalId = setInterval(scroll, 30);
+    const intervalId = setInterval(scroll, 20);
 
     return () => clearInterval(intervalId);
   }, []);
 
   const technologies = [
-    { name: "React", icon: "/assets/tech/react.svg" },
-    { name: "Next.js", icon: "/assets/tech/nextjs.svg" },
-    { name: "Tailwind CSS", icon: "/assets/tech/tailwind.svg" },
-    { name: "TypeScript", icon: "/assets/tech/typescript.svg" },
-    { name: "Node.js", icon: "/assets/tech/nodejs.svg" },
-    { name: "MongoDB", icon: "/assets/tech/mongodb.svg" },
-    { name: "GraphQL", icon: "/assets/tech/graphql.svg" },
-    { name: "PostgreSQL", icon: "/assets/tech/postgresql.svg" },
-    { name: "Vercel", icon: "/assets/tech/vercel.svg" },
-    { name: "AWS", icon: "/assets/tech/aws.svg" },
-    { name: "Docker", icon: "/assets/tech/docker.svg" },
-    { name: "Git", icon: "/assets/tech/git.svg" },
-    { name: "JavaScript", icon: "/assets/tech/javascript.svg" },
-    { name: "HTML5", icon: "/assets/tech/html5.svg" },
-    { name: "CSS3", icon: "/assets/tech/css3.svg" },
-    { name: "Redux", icon: "/assets/tech/redux.svg" },
-    { name: "Express", icon: "/assets/tech/express.svg" },
-    { name: "Firebase", icon: "/assets/tech/firebase.svg" },
+    { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+    { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+    { name: "Tailwind CSS", icon: "https://cdn.simpleicons.org/tailwindcss/06B6D4" },
+    { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+    { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+    { name: "NestJS", icon: "https://cdn.simpleicons.org/nestjs/E0234E" },
+    { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+    { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+    { name: "GraphQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" },
+    { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+    { name: "Vercel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" },
+    { name: "AWS", icon: "https://img.icons8.com/color/96/amazon-web-services.png" },
+    { name: "Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
+    { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+    { name: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
+    { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+    { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+    { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+    { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+    { name: "Redux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
+    { name: "Express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+    { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
+    { name: "Prisma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" },
+    { name: "Redis", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
+    { name: "Jest", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" },
+    { name: "Webpack", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" },
   ];
 
   return (
-    <section className="relative py-20 md:py-20 lg:h-[calc(100vh-65px)] lg:flex lg:items-center lg:justify-center lg:overflow-hidden bg-muted/30">
+    <section className="relative py-16 md:py-20 lg:h-[calc(100vh-65px)] lg:flex lg:items-center lg:justify-center lg:overflow-hidden bg-muted/30">
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
           <Badge className="px-3 py-1 text-sm rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">

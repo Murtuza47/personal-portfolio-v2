@@ -80,6 +80,15 @@ export function Footer() {
               </li>
               <li>
                 <Link 
+                  href="/#certifications" 
+                  className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
+                  onClick={(e) => handleSmoothScroll(e, "certifications")}
+                >
+                  Certifications
+                </Link>
+              </li>
+              <li>
+                <Link 
                   href="/#contact" 
                   className="text-muted-foreground hover:text-primary inline-block transition-all duration-100 hover:translate-x-2"
                   onClick={(e) => handleSmoothScroll(e, "contact")}

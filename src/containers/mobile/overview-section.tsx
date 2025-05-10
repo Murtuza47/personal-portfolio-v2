@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Smartphone } from "lucide-react";
 import Image from "next/image";
 
 export function MobileOverviewSection() {
@@ -50,25 +50,11 @@ export function MobileOverviewSection() {
             <div className="absolute -bottom-4 sm:-bottom-6 -left-4 sm:-left-6 z-20 bg-background rounded-lg p-3 sm:p-4 shadow-lg">
               <div className="flex items-center gap-2 sm:gap-3">
                 <div className="flex-shrink-0 h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center rounded-full bg-primary/10 text-primary">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-5 w-5 sm:h-6 sm:w-6"
-                  >
-                    <polyline points="16 18 22 12 16 6" />
-                    <polyline points="8 6 2 12 8 18" />
-                  </svg>
+                  <Smartphone />
                 </div>
                 <div>
                   <h4 className="font-medium text-sm sm:text-base">Modern Tech Stack</h4>
-                  <p className="text-xs sm:text-sm text-muted-foreground">React, Next.js, Tailwind CSS</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">React Native, Android, iOS, Firebase</p>
                 </div>
               </div>
             </div>
